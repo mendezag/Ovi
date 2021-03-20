@@ -49,25 +49,13 @@ export default function RegistroScreen(props) {
                     checked={false}
                     checkedColor={color.BLUE}
                 />
+                <View style={mainStyles.btnMain}>
+                    <TouchableOpacity onPress={() =>
+                        goToScreen(props, 'Login')}>
+                        <Text style={mainStyles.btntxt}>Registrarse</Text>
+                    </TouchableOpacity>
+                </View>
                 
-                <View style={{ flex: 1, flexDirection: 'row', alignItems: 'center' }}>
-                    <Text style={{ color: color.BLUE }}>¿Ya tienes una cuenta? </Text>
-                    <Button title="Inicia Sesión" onPress={() => goToScreen(props, 'Login')} type="clear" />
-                </View>
-                <View style={registroStyles.containerSocial}>
-                    <SocialIcon
-                        style={registroStyles.buttonSocialIcon}
-                        title='Iniciar con Facebook'
-                        button
-                        type='facebook'
-                    />
-                    <SocialIcon
-                        style={registroStyles.buttonSocialIcon}
-                        title='Iniciar con Google'
-                        button
-                        type='google-plus-official'
-                    />
-                </View>
             </View>
         </ScrollView>
     )

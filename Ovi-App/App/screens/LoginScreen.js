@@ -3,14 +3,16 @@ import {Text,
       View, 
       TouchableOpacity,
       StatusBar,
-      Image
+      Image,
+      ScrollView,
+      Button
 } from 'react-native'
-import {mainStyles, loginStyles} from '@styles/styles'
+import {mainStyles, loginStyles, registroStyles} from '@styles/styles'
 import MyTextInput from '@components/MyTextInput'
 import MyButton from '@components/MyButton'
 import color from '@styles/colors'
 import { UsuarioContext } from '@context/UsuarioContext'
-import RecuperarPasswordScreen from '@screens/RecuperarPasswordScreen'
+import { SocialIcon } from 'react-native-elements'
 //import Snackbar from 'react-native-snackbar'
 
 //FUNCION PARA NAVEGAR ENTRE PANTALLAS, RECIBE EL PROPS Y EL NOMBRE DE LA SCREEN A LA QUE NOS QUEREMOS MOVER
@@ -30,6 +32,12 @@ export default function LoginScreen(props){
 
 //ESTRUCTURA DE LA LOGINSCREEN=======================================
 return(
+    <ScrollView
+        keyboardDismissMode='on-drag'
+                keyboardShouldPersistTaps='always'
+                style={{ backgroundColor: color.WHITE }}>
+                <StatusBar backgroundColor={color.BLUE} translucent={true} />
+           
    <View style={[mainStyles.container, {padding: 50}]}>
        <StatusBar backgroundColor={color.BLUE} translucent={true}/>
        <View style={loginStyles.logo}>
@@ -56,7 +64,24 @@ return(
                <Text style={ [mainStyles.txtTransparent, { textDecorationLine: 'underline'}]}>Olvide mi Contraseña</Text>
            </TouchableOpacity>
        </View>
+
+        <View style={registroStyles.containerSocial}>
+                    <SocialIcon
+                        style={registroStyles.buttonSocialIcon}
+                        title='Iniciar con Facebook'
+                        button
+                        type='facebook'
+                    />
+                    <SocialIcon
+                        style={registroStyles.buttonSocialIcon}
+                        title='Iniciar con Google'
+                        button
+                        type='google-plus-official'
+                    />
+                </View>
+
    </View>
+   </ScrollView>
 
     )
     function iniciarSesion(){
