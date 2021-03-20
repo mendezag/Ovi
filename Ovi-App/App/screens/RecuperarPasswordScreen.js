@@ -10,13 +10,13 @@ import { mainStyles } from '@styles/styles'
 import MyTextInput from '@components/MyTextInput'
 import ToolBar from '@components/ToolBar'
 import color from '@styles/colors'
-
+//FUNCION PARA NAVEGAR ENTRE PANTALLAS
 function goToScreen(props, routeName){
     props.navigation.navigate(routeName)
 }
 
 export default function RecuperarPasswordScreen(props){
-
+//ESTRUCTURA DE LA SCREEN ============================================
     return(
         <ScrollView
             keyboardDismissMode='on-drag'
@@ -38,4 +38,5 @@ export default function RecuperarPasswordScreen(props){
         </View>
         </ScrollView>
     )
+    //ESTRUCTURA DE LA SCREEN ============================================
 }

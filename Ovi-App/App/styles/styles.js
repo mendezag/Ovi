@@ -1,5 +1,6 @@
 import { StyleSheet } from 'react-native'
 import color from './colors'
+//LISTA DE TODOS LOS STYLES QUE IMPLEMENTAMOS EN LA APP
 
 //Estilos para MainScreen
 const mainStyles = StyleSheet.create({
@@ -18,14 +19,14 @@ const mainStyles = StyleSheet.create({
 
     titleText: {
         fontSize: 28,
-        marginTop: 20,
+        //marginTop: 20,
         color: color.BLUE,
         //fontFamily: "Poppins-SemiBold"
     },
 
     btnMain: {
         width: 280,
-        marginTop: 40,
+        //marginTop: 40,
         marginBottom: 20,
         alignItems: 'center',
         backgroundColor: color.BLUE,

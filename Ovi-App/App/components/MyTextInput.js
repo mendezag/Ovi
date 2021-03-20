@@ -2,7 +2,7 @@ import React from 'react'
 import {StyleSheet, TouchableOpacity, Image} from 'react-native'
 import {Icon, Input } from 'react-native-elements'
 import color from '@styles/colors'
-
+//COMPONENTE QUE SE ENCARGA DE DARLE UN STYLE GENERAL A TODOS LOS TEXTIMPUTS POSIBLES EN LA APP
 export default function MyTextInput(props){
 
     return (
@@ -19,7 +19,7 @@ export default function MyTextInput(props){
         leftIcon={<Icon size={24} color={color.PRIMARYCOLOR} 
         type={'font-awesome'} name={props.image}/>}
         rightIcon={props.bolGone?
-        <TouchableOpacity activeOpacity = { 0.8 } style={styles.btnVisibility} onPress = {props.onPress}>
+        <TouchableOpacity activeOpacity = { 0.8 } style={styles.btnVisibility} onPress = {props.onPressIcon}>
         <Image style={ styles.btnImage} tintColor={color.PRIMARYCOLOR} 
         source = { (props.secureTextEntry) ? require('@recursos/images/ic_show_password.png') : require('@recursos/images/ic_hide_password.png')}/>
         </TouchableOpacity>:

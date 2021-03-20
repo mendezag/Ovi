@@ -11,7 +11,7 @@ import MyTextInput from '@components/MyTextInput'
 import ToolBar from '@components/ToolBar'
 import color from '@styles/colors'
 import { CheckBox, SocialIcon, Button } from 'react-native-elements'
-
+//FUNCION PARA NAVEGAR ENTRE PANTALLAS
 function goToScreen(props, routeName) {
     props.navigation.navigate(routeName)
 }
@@ -19,8 +19,9 @@ function goToScreen(props, routeName) {
 export default function RegistroScreen(props) {
 
     const [hidePassword, setHidePassword] = useState(false)
-
+//hidePassword SE ENCARGA DE OCULTAR EL PASSWORD CUANDO SE CLICKEA EN EL ICONO DEL OJITO
     return (
+        //ESTRUCTURA DE LA SCREEN====================================================
         <ScrollView
             keyboardDismissMode='on-drag'
             keyboardShouldPersistTaps='always'
@@ -75,4 +76,4 @@ export default function RegistroScreen(props) {
             </View>
         </ScrollView>
     )
-}
+}//ESTRUCTURA DE LA SCREEN====================================================
