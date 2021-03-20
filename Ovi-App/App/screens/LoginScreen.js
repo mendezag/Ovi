@@ -10,6 +10,7 @@ import MyTextInput from '@components/MyTextInput'
 import MyButton from '@components/MyButton'
 import color from '@styles/colors'
 import { UsuarioContext } from '@context/UsuarioContext'
+import RecuperarPasswordScreen from '@screens/RecuperarPasswordScreen'
 //import Snackbar from 'react-native-snackbar'
 
 //FUNCION PARA NAVEGAR ENTRE PANTALLAS, RECIBE EL PROPS Y EL NOMBRE DE LA SCREEN A LA QUE NOS QUEREMOS MOVER
@@ -32,8 +33,8 @@ return(
    <View style={[mainStyles.container, {padding: 50}]}>
        <StatusBar backgroundColor={color.BLUE} translucent={true}/>
        <View style={loginStyles.logo}>
-           <Image source={require('@recursos/images/Ovi.png')}
-           style={{ height:250, width:250}}/>    
+           <Image source={require('@recursos/images/OviLogin2.png')}
+           style={{ height:100, width:200}}/>    
        </View>
        <MyTextInput keyboardType='email-address' placeholder='E-mail' image='user'
        value={email} onChangeText={(email)=> setEmail(email)}/>

@@ -21,11 +21,11 @@ export default function SplashScreen(props) {
                 easing="ease-out"
                 iterationCount="infinite"
                 style={{
-                    width: 200,
-                    height: 200,
-                    margin: 100,
+                    width: 400,
+                    height: 660,
+                    //margin: 100,
                 }}
-                source={require('@recursos/images/Ovi.png')}
+                source={require('@recursos/images/OviLogin.png')}
             />
         </View>
     )//estructura y configuracion de la splashScreen y del splash==================

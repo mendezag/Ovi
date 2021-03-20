@@ -75,8 +75,8 @@ const loginStyles = StyleSheet.create({
     logo: {
         paddingTop: 20,
         alignItems: 'center',
-        height: 100,
-        width: 150
+        height: 150,
+        width: 250
     },
     
 })
