@@ -105,4 +105,5 @@ const registroStyles = StyleSheet.create({
     },
 })
 
+
 export { loginStyles, splashStyles, mainStyles, registroStyles }

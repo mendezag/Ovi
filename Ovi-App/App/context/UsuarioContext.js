@@ -1,6 +1,6 @@
 import React, { createContext, useReducer } from 'react'
 import { saveUsuario, deleteUsuario } from '@storage/UsuarioAsyncStorage'
-//import Snackar from 'react-native-snackbar'
+//import Snackbar from 'react-native-snackbar'
 
 const initialState = {
     usuario: {

@@ -11,6 +11,7 @@ import MyTextInput from '@components/MyTextInput'
 import ToolBar from '@components/ToolBar'
 import color from '@styles/colors'
 import { CheckBox, SocialIcon, Button } from 'react-native-elements'
+
 //FUNCION PARA NAVEGAR ENTRE PANTALLAS
 function goToScreen(props, routeName) {
     props.navigation.navigate(routeName)
